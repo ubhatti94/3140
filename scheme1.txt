@@ -1,0 +1,5 @@
+(define (word lis)
+  (if (null? lis)
+      '()
+      (append (word (cdr lis))
+              (list (car lis)))))
